@@ -1,5 +1,6 @@
 package com.example.dawid
 
+import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -12,6 +13,13 @@ class MainActivity : AppCompatActivity() {
         findViewById<ImageView>(R.id.imageView).setImageResource(R.drawable.pies1)
         findViewById<Button>(R.id.button3).setOnClickListener {
             findViewById<ImageView>(R.id.imageView).setScaleX(1.5f)
+        findViewById<Button>(R.id.button).setOnClickListener {
+            findViewById<ImageView>(R.id.imageView).setImageResource(R.drawable.pies1)
         }
+            findViewById<Button>(R.id.button2).setOnClickListener {
+                findViewById<ImageView>(R.id.imageView).setImageResource(R.drawable.pies2)
+            }
+        }
+
     }
 }
