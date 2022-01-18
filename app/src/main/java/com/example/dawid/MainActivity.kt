@@ -1,6 +1,5 @@
 package com.example.dawid
 
-import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -12,6 +11,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         findViewById<Button>(R.id.button3).setOnClickListener {
             findViewById<ImageView>(R.id.imageView).setScaleX(1.5f)
+        }
+        findViewById<Button>(R.id.button4).setOnClickListener {
+            findViewById<ImageView>(R.id.imageView).setScaleX(1.0f)
         }
         var x = 0;
         findViewById<Button>(R.id.button).setOnClickListener {
@@ -41,5 +43,12 @@ class MainActivity : AppCompatActivity() {
             } else if (x == 5)
                 x = 4
         }
+        findViewById<Button>(R.id.alpha).setOnClickListener {
+            findViewById<ImageView>(R.id.imageView).setAlpha(125)
+        }
+        findViewById<Button>(R.id.alpha2).setOnClickListener {
+            findViewById<ImageView>(R.id.imageView).setAlpha(250)
+        }
+
     }
 }
